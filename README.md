@@ -1,41 +1,11 @@
----
-license: apache-2.0
-language:
-- en
-- hi
-- bn
-- te
-- mr
-- ta
-- gu
-- kn
-- ml
-- pa
-- or
-- as
-tags:
-- text-to-speech
-- tts
-- audio
-- speech
-- indic
-- streaming
-- voice-cloning
-- zero-shot
----
+<div align="center">
 
-<p align="center">
-  <img src="bannerorqantaai.svg" alt="Orqanta-Voice - Next-Gen Streaming Multilingual Indic TTS Engine" width="100%" />
-</p>
+![Orqanta-Voice](bannerorqantaai.svg)
 
-<h1 align="center">Orqanta-Voice</h1>
+# Orqanta-Voice
+### Ultra-Fast Streaming Multilingual Text-to-Speech Engine for 11 Indic Languages & English
 
-<p align="center">
-  <strong>Ultra-Fast Streaming Multilingual Text-to-Speech Engine for 11 Indic Languages & English</strong>
-</p>
-
-<p align="center">
-  <a href="https://github.com/GANDHIKALASI/Orqanta-Voice/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-00f2fe.svg?style=flat-square" alt="License" /></a>
+<a href="https://github.com/GANDHIKALASI/Orqanta-Voice/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-Apache%202.0-00f2fe.svg?style=flat-square" alt="License" /></a>
   <a href="https://huggingface.co/buggandhi/Orqanta-Voice"><img src="https://img.shields.io/badge/🤗%20Hugging%20Face-buggandhi%2FOrqanta--Voice-ffcc00.svg?style=flat-square" alt="Hugging Face Model" /></a>
   <a href="https://colab.research.google.com/github/GANDHIKALASI/Orqanta-Voice/blob/main/Orqanta_Voice_Colab.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab" /></a>
   <a href="https://github.com/GANDHIKALASI/Orqanta-Voice"><img src="https://img.shields.io/badge/Architecture-Qwen3%20%2B%20Mimi%20%2B%20ECAPA-00c853.svg?style=flat-square" alt="Architecture" /></a>
@@ -43,7 +13,7 @@ tags:
   <img src="https://img.shields.io/badge/Latency-~14ms%20TTFA-651fff.svg?style=flat-square" alt="Latency" />
   <img src="https://img.shields.io/badge/Languages-11%20Indic%20%2B%20English-00b0ff.svg?style=flat-square" alt="Languages" />
   <img src="https://img.shields.io/badge/Creator-Gandhi%20Kalasi-ff6d00.svg?style=flat-square" alt="Creator" />
-</p>
+</div>
 
 ---
 
@@ -259,14 +229,66 @@ response.stream_to_file("hindi_output.mp3")
 
 ---
 
-## 👨‍💻 Creator & Community
+## 🏷️ Model Metadata & Specifications
 
-Developed and maintained by **Gandhi Kalasi** ([@GANDHIKALASI](https://github.com/GANDHIKALASI)).
+| Property | Details |
+| :--- | :--- |
+| **Model Type** | Streaming Autoregressive Neural Text-to-Speech (TTS) |
+| **License** | [Apache-2.0](LICENSE) |
+| **Supported Languages** | English (`en`), Odia (`or`), Hindi (`hi`), Telugu (`te`), Tamil (`ta`), Bengali (`bn`), Marathi (`mr`), Gujarati (`gu`), Kannada (`kn`), Malayalam (`ml`), Punjabi (`pa`), Assamese (`as`) |
+| **Acoustic Backbone** | Qwen3 (0.6B) + 8-Layer Depth Transformer |
+| **Audio Codec** | Kyutai Mimi Neural Codec (8 codebooks @ 12.5 Hz framerate) |
+| **Sample Rate** | 24,000 Hz (24 kHz) Hi-Fi Waveform |
+| **Speaker Embeddings** | ECAPA-TDNN (192-dimensional continuous speaker anchor) |
+| **Latency Benchmark** | ~14 ms TTFA (H100) / <90 ms TTFA (Colab T4 GPU) |
+| **Tags** | `text-to-speech`, `tts`, `audio`, `speech`, `indic`, `streaming`, `voice-cloning`, `zero-shot` |
 
-* **GitHub Repository:** [https://github.com/GANDHIKALASI/Orqanta-Voice](https://github.com/GANDHIKALASI/Orqanta-Voice)
-* **Hugging Face Model:** [https://huggingface.co/buggandhi/Orqanta-Voice](https://huggingface.co/buggandhi/Orqanta-Voice)
+---
 
-If you find Orqanta-Voice useful in your research, products, or applications, please star ⭐️ the repository!
+## 👨‍💻 Developer & Maintainer
+
+<table align="center" style="border-collapse: collapse; border: none;">
+  <tr>
+    <td align="center" width="160">
+      <a href="https://github.com/GANDHIKALASI">
+        <img src="https://github.com/GANDHIKALASI.png" width="130" height="130" style="border-radius: 50%; box-shadow: 0 4px 14px rgba(0,242,254,0.35); border: 3px solid #00f2fe;" alt="Gandhi Kalasi"/>
+      </a>
+    </td>
+    <td style="padding-left: 20px;">
+      <h3 style="margin: 0; color: #00f2fe;">Gandhi Kalasi</h3>
+      <p style="margin: 4px 0 10px 0; font-size: 14px; color: #94a3b8;">
+      
+<p>
+  <b>AI Product Engineer Aspirant</b> | Creator &amp; Maintainer of <i>Orqanta AI</i> &amp; <i>Orqanta Voice</i>
+</p>
+<p style="margin: 0 0 12px 0; font-size: 13.5px; line-height: 1.5;">
+  Passionate about building AI-powered products, exploring large language models (LLMs) and AI agents, and developing practical software solutions that turn complex ideas into useful, real-world applications.
+</p>
+      </p>
+      <div>
+        <a href="https://github.com/GANDHIKALASI">
+          <img src="https://img.shields.io/badge/GitHub-@GANDHIKALASI-181717?style=flat&logo=github&logoColor=white" alt="GitHub Profile"/>
+        </a>
+        &nbsp;
+        <a href="https://instagram.com/bug_gandhi">
+          <img src="https://img.shields.io/badge/Instagram-@bug__gandhi-E4405F?style=flat&logo=instagram&logoColor=white" alt="Instagram"/>
+        </a>
+        &nbsp;
+        <a href="https://huggingface.co/buggandhi/Orqanta-Voice">
+          <img src="https://img.shields.io/badge/Hugging_Face-buggandhi-yellow?style=flat&logo=huggingface&logoColor=black" alt="Hugging Face"/>
+        </a>
+        &nbsp;
+        <a href="https://github.com/GANDHIKALASI/Orqanta-Voice">
+          <img src="https://img.shields.io/badge/Repository-Orqanta--Voice-00f2fe?style=flat&logo=git&logoColor=black" alt="Repository"/>
+        </a>
+        &nbsp;
+        <a href="https://github.com/GANDHIKALASI/Orqanta-Voice/issues">
+          <img src="https://img.shields.io/badge/Issues-Report_or_Suggest-orange?style=flat&logo=github" alt="Issues"/>
+        </a>
+      </div>
+    </td>
+  </tr>
+</table>
 
 ---
 
