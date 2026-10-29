@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="1200" height="480" role="img" aria-label="Orqanta-Voice - Next-Gen Streaming TTS Engine">
+<style>
+svg{--t0:0.0s}
+.s{animation-duration:9.0s;animation-iteration-count:infinite;animation-fill-mode:both;animation-delay:calc(0s - var(--t0))}
+@keyframes draw{0%{stroke-dashoffset:3600}2.22%{stroke-dashoffset:3600}28.89%{stroke-dashoffset:0}93.33%{stroke-dashoffset:0}98.89%{stroke-dashoffset:3600}100%{stroke-dashoffset:3600}}
+.draw{animation-name:draw;animation-timing-function:cubic-bezier(.4,0,.2,1);stroke-dashoffset:0}
+@keyframes tag{0%{opacity:0}40%{opacity:0}48%{opacity:1}93.33%{opacity:1}98.89%{opacity:0}100%{opacity:0}}
+.tag{animation-name:tag}
+@media (prefers-reduced-motion:reduce){.s{animation:none!important}.draw{stroke-dashoffset:0}.tag{opacity:1}}
+</style>
+<defs>
+<linearGradient id="glow" x1="0%" y1="0%" x2="100%" y2="100%">
+  <stop offset="0%" stop-color="#00f2fe"/>
+  <stop offset="100%" stop-color="#4facfe"/>
+</linearGradient>
+<radialGradient id="ambient" cx="25%" cy="50%" r="55%">
+  <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.12"/>
+  <stop offset="60%" stop-color="#4facfe" stop-opacity="0.03"/>
+  <stop offset="100%" stop-color="#080c14" stop-opacity="0"/>
+</radialGradient>
+</defs>
+
+<!-- Background -->
+<rect width="1200" height="480" fill="#080c14"/>
+<rect width="1200" height="480" fill="url(#ambient)"/>
+
+<!-- Animated Glowing Logo -->
+<g transform="translate(80, 80) scale(0.38)">
+  <path class="s draw" d="M 272 848 L 272 545 C 272 534 262 530 222 530 A 190 190 0 0 1 32 340 L 32 170 A 64 64 0 0 1 160 170 L 160 340 C 160 372 187 399 219 399 L 272 399 L 272 207 A 175 175 0 0 1 623 207 L 623 620 C 623 645 640 655 665 655 L 736 655 L 736 432 A 64 64 0 0 1 864 432 L 864 640 A 163 163 0 0 1 701 803 L 655 803 C 636 803 623 815 623 835 L 623 848" fill="none" stroke="url(#glow)" stroke-width="64" stroke-linejoin="round" stroke-linecap="butt" pathLength="3600" stroke-dasharray="3600" stroke-dashoffset="0"/>
+</g>
+
+<!-- Category Eyebrow -->
+<text class="s tag" x="460" y="172" font-family="-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif" font-size="13" font-weight="700" fill="#00f2fe" letter-spacing="3.5">STREAMING VOICE SYNTHESIS</text>
+
+<!-- Title (Orqanta-Voice) -->
+<text x="460" y="248" font-family="-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif" font-size="78" font-weight="800" fill="#ffffff" letter-spacing="-2">Orqanta-Voice</text>
+
+<!-- Minimalist Subtitle -->
+<text class="s tag" x="460" y="296" font-family="-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif" font-size="18.5" font-weight="400" fill="#94a3b8" letter-spacing="-0.2">Real-time multilingual speech synthesis for 11 Indic languages &amp; English</text>
+
+<!-- Premium Feature Line (Minimalist, no box) -->
+<text class="s tag" x="460" y="348" font-family="-apple-system, BlinkMacSystemFont, &apos;Segoe UI&apos;, Roboto, Helvetica, Arial, sans-serif" font-size="14" font-weight="400" fill="#64748b">
+  <tspan fill="#e2e8f0" font-weight="600">~14ms</tspan> TTFA
+  <tspan fill="#00f2fe" dx="12" font-weight="700">·</tspan>
+  <tspan dx="12" fill="#e2e8f0" font-weight="600">CUDA-Graph</tspan> Continuous Batching
+  <tspan fill="#00f2fe" dx="12" font-weight="700">·</tspan>
+  <tspan dx="12" fill="#e2e8f0" font-weight="600">Zero-Shot</tspan> Cloning
+  <tspan fill="#00f2fe" dx="12" font-weight="700">·</tspan>
+  <tspan dx="12" fill="#e2e8f0" font-weight="600">20</tspan> Preset Voices
+</text>
+</svg>

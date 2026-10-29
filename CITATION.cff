@@ -1,0 +1,17 @@
+cff-version: 1.2.0
+message: "If you use Orqanta-Voice, please cite it as below."
+title: "Orqanta-Voice: Streaming Multilingual Text-to-Speech for Indic Languages"
+authors:
+  - name: "Gandhi Kalasi"
+    alias: "gandhikalasi"
+version: "1.0"
+date-released: "2026-10-25"
+license: Apache-2.0
+repository-code: "https://github.com/GANDHIKALASI/Orqanta-Voice"
+url: "https://huggingface.co/buggandhi/Orqanta-Voice"
+keywords:
+  - text-to-speech
+  - indic
+  - multilingual
+  - voice-cloning
+  - streaming

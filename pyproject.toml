@@ -1,0 +1,57 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "orqanta_voice"
+version = "0.1.0"
+description = "Orqanta-Voice: streaming multilingual (12 Indic languages + English) text-to-speech with zero-shot voice cloning"
+readme = "README.md"
+requires-python = ">=3.10"
+license = "Apache-2.0"
+authors = [
+    {name = "Gandhi Kalasi", email = "117009786+GANDHIKALASI@users.noreply.github.com"}
+]
+maintainers = [
+    {name = "Gandhi Kalasi", email = "117009786+GANDHIKALASI@users.noreply.github.com"}
+]
+# Pins are the versions the engine was built and measured with (torch 2.8.0+cu128, transformers 5.6.2).
+# torch / torchaudio cu128 wheels come from https://download.pytorch.org/whl/cu128 (see README.md "Install").
+dependencies = [
+    "torch>=2.4.0",            # compatible with Colab, PyTorch 2.4-2.11+
+    "torchaudio>=2.4.0",       # matches torch
+    "transformers>=4.45.0",     # Qwen3 backbone, MimiModel, DynamicCache
+    "tokenizers>=0.20",
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "soundfile>=0.12",
+    "speechbrain>=1.0.0",      # ECAPA-TDNN speaker embedding (spkrec-ecapa-voxceleb)
+    "huggingface_hub>=1.0",
+    "safetensors>=0.6",
+    "pyyaml>=6.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/GANDHIKALASI/Orqanta-Voice"
+Repository = "https://github.com/GANDHIKALASI/Orqanta-Voice"
+"Hugging Face" = "https://huggingface.co/buggandhi/Orqanta-Voice"
+
+[project.optional-dependencies]
+# HTTP (OpenAI-compatible) + WebSocket server and the client (orqanta_voice.server, orqanta_voice.client)
+server = ["aiohttp>=3.10"]
+# CPU test suite (orqanta_voice/tests): server tests run against a fake engine
+dev = ["aiohttp>=3.10", "pytest>=8", "pytest-asyncio>=0.23", "pytest-aiohttp>=1.0"]
+
+[tool.setuptools]
+include-package-data = false
+
+[tool.setuptools.packages.find]
+where = ["."]
+# serve/ and scripts/ have no __init__.py (namespace packages); configs/ is shipped as data at the project root
+# because orqanta_voice/engine.py reads <root>/configs/s3_fresh_v1.yaml and <root>/configs/text_frames_prior.json.
+include = ["orqanta_voice", "orqanta_voice.*", "tts", "tts.*", "serve", "scripts", "configs"]
+namespaces = true
+
+[tool.setuptools.package-data]
+orqanta_voice = ["assets/*.json"]
+configs = ["s3_fresh_v1.yaml", "text_frames_prior.json"]

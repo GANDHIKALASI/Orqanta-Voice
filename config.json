@@ -1,0 +1,12 @@
+{
+  "library_name": "orqanta_voice",
+  "model_type": "orqanta_voice",
+  "model_config": "orqanta_voice_config.json",
+  "backbone": "backbone/config.json",
+  "codec": "kyutai/mimi",
+  "speaker_encoder": "speechbrain/spkrec-ecapa-voxceleb",
+  "sample_rate": 24000,
+  "frame_rate": 12.5,
+  "num_codebooks": 32,
+  "loader": "orqanta_voice.OrqantaVoiceTTS.from_pretrained"
+}

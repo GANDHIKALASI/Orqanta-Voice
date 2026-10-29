@@ -1,0 +1,333 @@
+{
+ "schema": "maya3_voices_v1",
+ "prompt_format": "{Name}: <text>",
+ "note": "Select with voice=<name> (case-insensitive). mode: named = trained name prompt; spk = stored speaker embedding. Never combine a named voice with your own reference audio.",
+ "voices": [
+  {
+   "name": "Ahana",
+   "prompt_prefix": "{Ahana}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "young",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Young female voice, bright, youthful"
+  },
+  {
+   "name": "Vaidehi",
+   "prompt_prefix": "{Vaidehi}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "adult",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Adult female voice, calm, gentle"
+  },
+  {
+   "name": "Malini",
+   "prompt_prefix": "{Malini}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "mature",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Mature female voice, steady narrator"
+  },
+  {
+   "name": "Charvi",
+   "prompt_prefix": "{Charvi}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "young",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Young female voice, energetic, upbeat"
+  },
+  {
+   "name": "Jahnavi",
+   "prompt_prefix": "{Jahnavi}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "adult",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "ta",
+    "te"
+   ],
+   "description": "Adult female voice, warm, friendly"
+  },
+  {
+   "name": "Anirban",
+   "prompt_prefix": "{Anirban}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "adult",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Adult male voice, steady narrator"
+  },
+  {
+   "name": "Nakul",
+   "prompt_prefix": "{Nakul}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "young",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Young male voice, bright, youthful"
+  },
+  {
+   "name": "Vasant",
+   "prompt_prefix": "{Vasant}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "mature",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "ta",
+    "te"
+   ],
+   "description": "Mature male voice, steady narrator"
+  },
+  {
+   "name": "Siddhant",
+   "prompt_prefix": "{Siddhant}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "adult",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Adult male voice, clear, professional"
+  },
+  {
+   "name": "Satvik",
+   "prompt_prefix": "{Satvik}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "young",
+   "langs": [
+    "bn",
+    "en",
+    "gu",
+    "hi",
+    "kn",
+    "ml",
+    "mr",
+    "or",
+    "pa",
+    "ta",
+    "te"
+   ],
+   "description": "Young male voice, warm, friendly"
+  },
+  {
+   "name": "Abhay",
+   "prompt_prefix": "{Abhay}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "adult",
+   "langs": [
+    "en",
+    "hi"
+   ],
+   "description": "Adult male voice, natural conversational style; trained on English, Hindi"
+  },
+  {
+   "name": "Nivedita",
+   "prompt_prefix": "{Nivedita}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "adult",
+   "langs": [
+    "en",
+    "hi"
+   ],
+   "description": "Adult female voice, natural conversational style; trained on English, Hindi"
+  },
+  {
+   "name": "Ishwari",
+   "prompt_prefix": "{Ishwari}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "adult",
+   "langs": [
+    "hi"
+   ],
+   "description": "Adult female voice, natural conversational style; trained on Hindi"
+  },
+  {
+   "name": "Ritvik",
+   "prompt_prefix": "{Ritvik}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "adult",
+   "langs": [
+    "hi"
+   ],
+   "description": "Adult male voice, natural conversational style; trained on Hindi"
+  },
+  {
+   "name": "Vrinda",
+   "prompt_prefix": "{Vrinda}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "young",
+   "langs": [
+    "hi"
+   ],
+   "description": "Young female voice, natural conversational style; trained on Hindi"
+  },
+  {
+   "name": "Sreekar",
+   "prompt_prefix": "{Sreekar}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "adult",
+   "langs": [
+    "en",
+    "hi",
+    "te"
+   ],
+   "description": "Adult male voice, natural conversational style; trained on English, Hindi, Telugu"
+  },
+  {
+   "name": "Kayal",
+   "prompt_prefix": "{Kayal}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "adult",
+   "langs": [
+    "en",
+    "ta"
+   ],
+   "description": "Adult female voice, natural conversational style; trained on English, Tamil"
+  },
+  {
+   "name": "Shaunak",
+   "prompt_prefix": "{Shaunak}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "young",
+   "langs": [
+    "en",
+    "hi"
+   ],
+   "description": "Young male voice, natural conversational style; trained on English, Hindi"
+  },
+  {
+   "name": "Akshat",
+   "prompt_prefix": "{Akshat}: ",
+   "mode": "named",
+   "gender": "male",
+   "age_band": "adult",
+   "langs": [
+    "en",
+    "hi"
+   ],
+   "description": "Adult male voice, natural conversational style; trained on English, Hindi"
+  },
+  {
+   "name": "Tanushree",
+   "prompt_prefix": "{Tanushree}: ",
+   "mode": "named",
+   "gender": "female",
+   "age_band": "adult",
+   "langs": [
+    "en",
+    "hi"
+   ],
+   "description": "Adult female voice, natural conversational style; trained on English, Hindi"
+  }
+ ]
+}

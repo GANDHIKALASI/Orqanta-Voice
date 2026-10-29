@@ -1,0 +1,73 @@
+{
+ "format": "orqanta_voice-safetensors",
+ "format_version": 1,
+ "model_type": "orqanta_voice",
+ "model": {
+  "backbone": "backbone",
+  "attn": "sdpa",
+  "speaker_anchor": {
+   "enabled": true,
+   "hidden": 512,
+   "input_dim": 192,
+   "dropout": 0.2
+  },
+  "depth_grouped": true,
+  "depth_ckpt_from": 9
+ },
+ "key_prefix": "model.",
+ "aliases": {
+  "backbone.lm.lm_head.weight": "backbone.lm.model.embed_tokens.weight"
+ },
+ "tensors": {
+  "count": 732,
+  "stored": 731,
+  "dtypes": {
+   "bfloat16": 732
+  },
+  "stored_bytes": 5004797312,
+  "n_params_unique": 2502398656
+ },
+ "architecture": {
+  "backbone": "Qwen3-1.7B (Qwen3ForCausalLM, built from backbone/config.json)",
+  "depth_decoder": "DepthV2, 31 levels",
+  "speaker_anchor": "ECAPA-192 -> MLP"
+ },
+ "audio": {
+  "sample_rate": 24000,
+  "frame_rate_hz": 12.5,
+  "n_codebooks": 32,
+  "codebook_size": 2048,
+  "codec": "kyutai/mimi"
+ },
+ "speaker_encoder": {
+  "repo": "speechbrain/spkrec-ecapa-voxceleb",
+  "dim": 192
+ },
+ "languages": [
+  "as",
+  "bn",
+  "en",
+  "gu",
+  "hi",
+  "kn",
+  "ml",
+  "mr",
+  "or",
+  "pa",
+  "ta",
+  "te"
+ ],
+ "source": {
+  "name": "orqanta-voice-v1",
+  "update": null,
+  "format": null,
+  "sha256_total": null,
+  "hash_alg": null,
+  "n_params": null
+ },
+ "converted_utc": "2026-10-29T00:00:00Z",
+ "converter": {
+  "torch": "2.8.0+cu128",
+  "safetensors": "0.8.0"
+ }
+}

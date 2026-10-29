@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+*.egg-info/
+.venv/
+serve/scratch/
+*.wav
+!assets/audio/*.wav
+clone_out/
+smoke_out/
